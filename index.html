@@ -33,14 +33,17 @@
             height: auto;
         }
 
-        #google-scholar {
+        #social-links {
             margin-top: 10px;
         }
 
-        #google-scholar img {
-            width: 40px; /* Increased width for the Google Scholar icon */
+        #social-links a {
+            margin-right: 10px;
+        }
+
+        #social-links img {
+            width: 30px; /* Adjust the width of the social icons */
             height: auto;
-            margin-right: 5px;
         }
 
         #right-content {
@@ -49,8 +52,9 @@
         }
 
         h1 {
-            font-size: 1.8em; /* Adjusted font size for the name */
+            font-size: 2.2em; /* Adjusted font size for the name */
             margin-bottom: 5px; /* Reduced margin-bottom for better spacing */
+            font-weight: bold; /* Made the name bold */
         }
 
         #email {
@@ -91,16 +95,22 @@
     <div id="container">
         <div id="left-content">
             <img id="profile" src="profile.png" alt="Profile Picture">
-            <h1>Ya-Dong Wu(吴亚东)</h1>
+            <h1>YD Wu</h1>
             <p id="email"><a href="mailto:yadongwu@hku.hk">yadongwu@hku.hk</a></p>
-            <div id="google-scholar">
+            <div id="social-links">
                 <a href="https://scholar.google.ca/citations?user=QKDJkDAAAAAJ&hl=en" target="_blank">
                     <img src="googleScholar.png" alt="Google Scholar Icon">
+                </a>
+                <a href="https://twitter.com/YadongWu6" target="_blank">
+                    <img src="twitter.png" alt="Twitter Icon">
                 </a>
             </div>
         </div>
         <div id="right-content">
-            <p>I am a tenure-track associate professor at John Hopcroft center for computer science of Shanghai Jiao Tong University. I am interested in quantum information and machine learning for quantum.</p>
+            <p>I am a tenure-track associate professor at the John Hopcroft Center for Computer Science at Shanghai Jiao Tong University. 
+                My research focuses on quantum information and machine learning for quantum science. 
+                Before joining SJTU, I was a postdoctoral fellow in Prof. Giulio Chiribella's group at the University of Hong Kong. 
+                I earned my Ph.D. in physics from the University of Calgary under the supervision of Prof. Barry C. Sanders.</p>
 
             <div id="education-title">
                 <p>Education</p>
@@ -117,11 +127,11 @@
             </div>
 
             <div id="publications">
-                <ol>
+                <ul>
                     <li>YD Wu, Y Zhu, G Bai, Y Wang, G Chiribella, Quantum Similarity Testing with Convolutional Neural Networks, PRL 2023 (highlighted by Nature Computational Science)</li>
                     <li>Y Zhu, YD Wu, G Bai, DS Wang, Y Wang, G Chiribella, Flexible Learning of Quantum States with Generative Query Neural Networks, Nature Communications 2022</li>
                     <li>YD Wu, G Bai, G Chiribella, N Liu, Efficient Verification of Continuous-Variable Quantum States and Devices without Assuming Identical and Independent Operations, PRL 2021</li>
-                </ol>
+                </ul>
             </div>
         </div>
     </div>
