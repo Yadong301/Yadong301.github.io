@@ -16,16 +16,36 @@
 
         #container {
             display: flex;
+            justify-content: space-between;
             align-items: flex-start; /* Align items at the start of the container */
+            max-width: 800px;
+            width: 100%;
+        }
+
+        #left-content {
+            flex-shrink: 0;
+            margin-right: 20px;
         }
 
         #profile {
             border-radius: 50%;
-            margin-right: 20px;
+            width: 150px;
+            height: auto;
         }
 
-        #content {
-            max-width: 600px; /* Adjust the width of the content as needed */
+        #google-scholar {
+            margin-top: 10px;
+        }
+
+        #google-scholar img {
+            width: 30px; /* Adjust the width of the Google Scholar icon */
+            height: auto;
+            margin-right: 5px;
+        }
+
+        #right-content {
+            flex-grow: 1;
+            max-width: 600px; /* Adjust the width of the right content as needed */
         }
 
         h1 {
@@ -42,40 +62,30 @@
             font-style: italic;
             margin-top: 5px;
         }
-
-        #google-scholar {
-            margin-top: 10px;
-        }
-
-        #google-scholar img {
-            width: 30px; /* Adjust the width of the Google Scholar icon */
-            height: auto;
-            margin-right: 5px;
-        }
     </style>
 </head>
 <body>
     <div id="container">
-        <img id="profile" src="profile.png" alt="Profile Picture" width="150">
-        <h1>Ya-Dong Wu(吴亚东)</h1>
-        <div id="google-scholar">
+        <div id="left-content">
+            <img id="profile" src="profile.png" alt="Profile Picture">
+            <h1>Ya-Dong Wu(吴亚东)</h1>
+            <div id="google-scholar">
                 <a href="https://scholar.google.ca/citations?user=QKDJkDAAAAAJ&hl=en" target="_blank">
-                    <img src="googleScholar.png" alt="Google Scholar Icon">
+                    <img src="google-scholar-icon.png" alt="Google Scholar Icon">
                 </a>
             </div>
-        
-        <div id="content">
+        </div>
+        <div id="right-content">
             <p>I am a tenure-track associate professor at John Hopcroft center for computer science of Shanghai Jiao Tong University. I am interested in quantum information and machine learning for quantum.</p>
-
 
             <div id="education-title">
                 <p>Education</p>
             </div>
 
             <div id="education">
-                <p>PhD, Physics, University of Calgary</p>
-                <p>Master, UM-SJTU Joint Institute, Shanghai Jiao Tong University</p>
-                <p>Bachelor, UM-SJTU Joint Institute, Shanghai Jiao Tong University</p>
+                <p>PhD, University of Calgary</p>
+                <p>Master, Shanghai Jiao Tong University</p>
+                <p>Bachelor, Shanghai Jiao Tong University</p>
             </div>
         </div>
     </div>
