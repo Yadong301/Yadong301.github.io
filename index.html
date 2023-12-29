@@ -13,7 +13,12 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
-
+        
+        #chinese-name {
+            font-family: 'KaiTi', sans-serif; /* Set font to KaiTi */
+            font-size: 2em; /* Adjust font size as needed */
+        }
+        
         #container {
             display: flex;
             justify-content: space-between;
@@ -105,7 +110,8 @@ a:hover {
     <div id="container">
         <div id="left-content">
             <img id="profile" src="profile.png" alt="Profile Picture">
-            <h1>Ya-Dong Wu 吴亚东</h1>
+            <div id="chinese-name">吴亚东</div>
+            <h1>Ya-Dong Wu</h1>
             <p id="email"><a href="mailto:yadongwu@hku.hk">yadongwu@hku.hk</a></p>
             <div id="social-links">
                 <a href="https://arxiv.org/a/wu_y_6.html" target="_blank">
